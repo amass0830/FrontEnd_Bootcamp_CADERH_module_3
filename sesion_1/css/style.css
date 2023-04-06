@@ -153,4 +153,146 @@ form {
     border: #457292 solid;
     border-radius: 0;
     font-size: medium;
-  }
+}
+
+
+/* 
+CODE USING BEM (Esta metodologia no está haciendo funcionar la página, pero por fines educativos, decido pegar el mismo código utilizando dicha nomenclatura.)  
+*/
+
+
+/* BASE WITH COMMON STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    --primary-color: #0e8eae;
+    --text-color: #e2e1e2;
+    --description-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #25bdb5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8f78eb;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    color: rgb(14, 23, 55);
+    background-color: #b7e5f1;
+    background-image: url(/img/beach_backgroud.jpg);
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.title__sub {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.title__main {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0;
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* LAYOUT STYLES */
+
+.bg-navbar-new-color {
+    background-color: #b7e5f1;
+    font-size: medium;
+}
+
+.main-page {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 2rem;
+    background: transparent;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    flex: 1;
+}
+
+/* HTML ELEMENTS STYLE */
+
+.intro-main-page {
+    background-color: #4e6f71;
+    color: var(--text-color);
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: fit-content;
+    height: fit-content;
+    font-size: medium;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #b7e5f1;
+    min-height: 35px;
+    font-size: medium;
+}
+
+.footer__copyright {
+    color: #4e6f71;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #b7e5f1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
