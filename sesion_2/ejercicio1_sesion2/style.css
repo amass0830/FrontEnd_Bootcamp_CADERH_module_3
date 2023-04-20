@@ -135,8 +135,6 @@ nav a {
   grid-auto-rows: auto;
   gap: 20px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  font-family: sans-serif;
-  padding-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -145,19 +143,18 @@ nav a {
 }
 
 .card__image {
-  width: 100%;
+  width: 90%;
   height: 300px;
   object-fit: cover;
   display: block;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  margin: 0 auto;
+  margin-top: 0 auto;
 }
 
 .card__content {
   line-height: 1.5;
   font-size: 0.9em;
   padding: 15px;
-  background: #fafafa;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
 
 .card__content > p:first-of-type {
@@ -173,10 +170,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #555555;
-  background: #eeeeee;
   font-size: 0.8em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
 
 .card__info i {
@@ -299,6 +293,7 @@ nav a {
   display: inline-block;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   margin-bottom: 0;
+  background-color: rgba(250, 196, 138, 0.5);
 }
 
 .carousel-inner {
