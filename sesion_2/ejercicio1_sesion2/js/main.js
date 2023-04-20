@@ -1,29 +1,15 @@
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
+$(document).ready(function() {
+  $('.carousel-inner .product-card:first').addClass('active');
+  $('.carousel-indicators li:first').addClass('active');
+  $('.carousel-indicators li').click(function() {
+    var index = $(this).data('slide-to');
+    $('.carousel-indicators li').removeClass('active');
+    $(this).addClass('active');
+    $('.carousel-inner .product-card').removeClass('active');
+    $('.carousel-inner .product-card:eq(' + index + ')').addClass('active');
   });
+
+  $('#myCarousel').carousel({
+    interval: 5000 
+  });
+});

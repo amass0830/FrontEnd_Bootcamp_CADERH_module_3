@@ -19,6 +19,11 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     targetSlide.classList.add('current-slide');
 }
 
+const updateDot = (currentDot, targetDot) => {
+    currentDot.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevtSlide = currentSlide.previousElementSibling;

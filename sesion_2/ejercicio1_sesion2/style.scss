@@ -1,4 +1,6 @@
-/* BASE WITH COMMON STYLES */
+/* 
+************************************** BASE WITH COMMON STYLES *****************************
+*/
 
 :root{
     --pinkGradient: linear-gradient(
@@ -51,6 +53,13 @@ body {
     color: #ffa056;
   }
 
+.main_space_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
 .title2 {
     font-size: 1.6rem;
     font-weight: 500;
@@ -70,8 +79,9 @@ body {
     font-weight: 400;
 }
 
-
-/* LAYOUT STYLES */
+/* 
+**************************************** LAYOUT STYLES ******************************************
+*/
 
 
 .bg-navbar-new-color {
@@ -91,7 +101,7 @@ nav a {
 }
 
 
-// /* HTML ELEMENTS STYLE  */
+ /* ********************************8HTML ELEMENTS STYLE  ***************************************8 */
 
 
 .footer{
@@ -131,8 +141,10 @@ nav a {
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     grid-auto-rows: auto;
     gap: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     font-family: sans-serif;
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .cards * {
@@ -141,7 +153,7 @@ nav a {
 
 .card__image {
     width: 100%;
-    height: 150px;
+    height: 300px;
     object-fit: cover;
     display: block;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -197,4 +209,107 @@ nav a {
 .btn {
     margin: 0 auto;
     display: block;
+    background-color: #f76891;
+    border-color: #f76891;
+    color: #eeeeee;
+}
+
+
+/* 
+**************************** CAROUSEL STYLE LAYOUT ************************************ 
+*/
+
+// #myCarousel {
+//     height: 550px;
+//     width: 77%;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .carousel-inner {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     overflow-x: hidden;
+//     height: 100%;
+//     width: 100%;
+//   }
+  
+//   .carousel-inner .item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100%;
+//     width: 100%;
+//   }
+
+//   .product-card {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 20px;
+//     margin-right: 20px;
+//     width: 350px;
+//     height: 550px;
+//     background-color: #f6c486;
+//     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+//     border-radius: 5px;
+//   }
+  
+//   .product-card img {
+//     max-width: 70%;
+//     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+//     object-fit: cover;
+//   }
+  
+//   .product-card-desc {
+//     margin-top: 20px;
+//     text-align: center;
+//   }
+  
+//   .product-card-desc p {
+//     margin-bottom: 10px;
+//   }
+  
+//   .product-card-desc button {
+//     background-color:#f76891;
+//     color: #7343f8;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     justify-content: space-between;
+//   }
+  
+//   .product-card-desc button:hover {
+//     background-color: #00d6f2;
+//   }
+  
+//   .carousel-control {
+//     position: absolute;
+//     top: 50%;
+//     font-size: 1.5em;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-shadow: none;
+//     background: transparent;
+//     border: none;
+//   }
+//   .carousel-control .prev {
+//     margin-right: 10px;
+//     }
+  
+// .carousel-control .next {
+//    margin-left: -10px;
+//  }
+
+.card {
+    display: inline-block;
+}
+  
+.carousel-inner {
+    text-align: center;
+    background-color: transparent;
 }
