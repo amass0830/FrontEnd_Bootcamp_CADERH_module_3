@@ -491,6 +491,61 @@ nav {
   color: #9a9a9a;
   padding: 10px 0 20px;
   font-size: 13px;
+  font: 1em sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-left, .nav-right {
+    display: inline-block;
+  }
+  .nav-left ul li img {
+    width: 22px;
+    margin: 0 5px;
+  }
+  .search-box {
+    display: none;
+  }
+  .left-sidebar,
+  .right-sidebar {
+    display: none;
+  }
+  .story-gallery {
+    display: none;
+  }
+  .post-input-container {
+    padding-left: 8px;
+    padding-top: 15px;
+  }
+  .post-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .shortcut-links,
+  .important-links {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .write-post-container {
+    padding: 0;
+    padding-top: 6px;
+    box-sizing: border-box;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
