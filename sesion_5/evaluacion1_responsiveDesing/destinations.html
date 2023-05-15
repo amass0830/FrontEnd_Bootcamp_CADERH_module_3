@@ -14,33 +14,35 @@
 </head>
 
 <body class="destinations-page">
-    <nav class="navbar navbar-expand-sm navbar-light bg-navbar-new-color">
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar-new-color">
         <div class="container-fluid">
             <div class="nav-left">
-                <div class="nav-left">
-                    <a href="index.html"> <img class="logo" src="/img/nav_logo.png" alt="logo_ecoSnap"></a>
-                    <ul>
-                        <li><img src="/img/bell.svg"></li>
-                        <li><img src="/img/inbox.svg"></li>
-                        <li><img src="/img/video (1).svg"></li>
-                    </ul>
-                </div>
+                <a href="index.html"> <img class="logo" src="/img/nav_logo.png" alt="logo_ecoSnap"></a>
+                <ul>
+                    <li><img src="/img/bell.svg"></li>
+                    <li><img src="/img/inbox.svg"></li>
+                    <li><img src="/img/video (1).svg"></li>
+                </ul>
             </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/destinations.html">Destinations</a>
-                    <a class="nav-link active" aria-current="page" href="/review_sage.html"> Review </a>
-                    <a class="nav-link active" aria-current="page" href="/community.html"> Community </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="/review_sage.html"> Review </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="/community.html"> Community </a>
+                    </li>
                 </div>
-            </div>
-            <div class="nav-user-icon online">
-                <img src="img/profile-pic.image" alt="">
             </div>
         </div>
     </nav>
@@ -138,9 +140,10 @@
                         src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1053&q=80"
                         alt="">
                     <div class="card__content">
-                        <h3>Japan</h3>
+                        <h3>Top 10 Hidden Gems for Adventure Seekers</h3>
                         <p> 
-                            Stay three nights in Hotel Shinjuku Kabukicho Tower
+                            Are you an adventure seeker always on the lookout for unique experiences? Well, look  no further! In this article, we reveal the top 10 hidden gems around the world that will satisfy your craving for thrilling adventures, we got you.
+
                         </p>
                     </div>
                     <div class="card__info">
@@ -152,9 +155,9 @@
                         src="https://images.unsplash.com/photo-1587975844610-40f1ad10d07e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
                         alt="">
                     <div class="card__content">
-                        <h3>Egypt</h3>
+                        <h3>Exploring Local Cuisine: A Gastronomic Journey</h3>
                         <p> 
-                            Stay three nights in Hotel Conrad Cairo, Having fun
+                            One of the best ways to immerse yourself in a new culture is through its cuisine. In this article, we take you on a gastronomic journey to discover the flavors.
                         </p>
                     </div>
                     <div class="card__info">
@@ -165,9 +168,9 @@
                     <img class="card__image"
                         src="https://images.unsplash.com/photo-1540202404-a2f29016b523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80">
                     <div class="card__content">
-                        <h3>Maldives</h3>
+                        <h3>Uncovering Untold Stories: Heritage and History</h3>
                         <p> 
-                            Stay three nights in Hotel The Standard, Huruvalhi
+                            Every destination has its own unique heritage and history waiting to be explored. Join us as we dive deep into the untold stories of fascinating landmarks and ancient ruins.
                         </p>
                     </div>
                     <div class="card__info">
@@ -196,6 +199,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
 </html>

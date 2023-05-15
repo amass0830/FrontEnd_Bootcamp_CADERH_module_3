@@ -14,7 +14,7 @@ a:link {
 }
 
 a:visited {
-    color: #00823a;
+    color: #000000;
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -268,10 +268,6 @@ nav a {
     color: #94B9FF;
 }
 
-.important-links {
-    border-bottom: 1px solid #ccc;
-}
-
 .shortcut-links a img {
     width: 40px;
     border-radius: 4px;
@@ -308,9 +304,9 @@ nav a {
 .main_space_welcomeFrame_text {
     text-align: center;
     justify-items: center;
-    background: rgba(110, 190, 217, 0.5);
+    background: hsla(219, 100%, 82%, 0.505);
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: #00aee7 solid;
+    border: hsl(219, 44%, 65%) solid;
     margin: 2px  2px;
     border-radius: 6px;
     margin-bottom: 1.4rem;
@@ -329,7 +325,7 @@ nav a {
 }
 
 .main-content{
-    flex-basis: 47%;
+    flex-basis: 50%;
     top: 70px;
     align-self: flex-start;
 }
@@ -536,9 +532,10 @@ nav a {
 .load-more-btn{
     display: block;
     margin: auto;
+    margin-bottom: 5px;
     cursor: pointer;
     padding: 5px 10px;
-    border: 1px solid #9a9a9a;
+    border: 1px solid hsl(196, 60%, 35%) ;
     background: transparent;
     border-radius: 4px;
 }
@@ -646,10 +643,19 @@ nav a {
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 820px) {
+
     .logo {
       width: 120px;
       height: auto;
+    }
+    
+    .title {
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2rem;
+        -webkit-text-stroke: 1.5px hsl(196, 55%, 35%);
+        color: hsl(219, 100%, 79%);
     }
   
     nav {
@@ -666,12 +672,10 @@ nav a {
         width: 22px;
         margin: 0 5px;
     }
-  
-    .search-box {
-      display: none;
+    .nav-user-icon {
+        display: none;
     }
   
-    .left-sidebar,
     .right-sidebar {
       display: none;
     }
@@ -685,27 +689,67 @@ nav a {
         padding-top: 15px;
     }
   
-  .post-container {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    }
-    .shortcut-links,
-    .important-links {
-      display: none;
+    .post-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
     }
 
-    .container {
+    .container, .container_home{
         max-width: 100%;
         margin: 0;
         padding: 0;
         box-sizing:border-box;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap;
     }
     
     .write-post-container{
         padding: 0;
+        width: 100%;
         padding-top: 6px;
         box-sizing:border-box;
+    }
+
+    .footer{
+        padding: 3px;
+    }
+    .footer__footer_socials{
+        display: none;
+    }
+    .main-content{
+        width: auto;
+    }
+
+    .left-sidebar{
+        position: static;
+        display: flex;
+        padding: auto;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.805);
+        margin-bottom: 15px;
+    }
+    
+    .important-links, .shortcut-links  {
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+        align-items: flex-start; 
+        margin: 20px 20px;
+        justify-content: center;
+    }
+    
+    .important-links img{
+        width: 25px;
+        margin-right: 5px;
     }
 }
   
@@ -715,9 +759,9 @@ nav a {
 
 form{
     justify-items: center;
-    background: rgba(110, 190, 217, 0.5);
+    background: hsla(219, 100%, 82%, 0.505);
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: #00aee7 solid;
+    border: hsl(219, 44%, 65%) solid;
     border-radius: 6px;
     margin: 2px  2px;
     margin-bottom: 1.4rem;
@@ -737,11 +781,31 @@ form{
     color: rgb(125, 29, 29);
 }
 
+.notificationOnSmallScreens{
+    display: none;
+    color: #cd3e00;
+}
+
 @media screen and (max-width: 700px) {
-    .form {
+    .main_space-whitespace{ 
+        width: auto;
+    }
+    .main_space_welcomeFrame_text {
+        width: auto;
+        margin-right: auto; 
+    }
+    .form_submit{
+        display: none;
+        
+    }
+    .notificationOnSmallScreens{
+        display: flex;
+    }
+    .nav-left{
         display: none;
     }
 }
+  
 
 /* 
 ********************************* CARDS  AND CAROUSEL STYLING *********************** 
@@ -774,9 +838,13 @@ form{
 .btn {
     margin: 0 auto;
     display: block;
-    background-color: hsl(195, 100%, 45%);
-    border-color:hsl(195, 100%, 45%); ;
+    background-color: #246c86;
+    border-color:#1d586e ;
     color: #e3dede;
+}
+
+.btn:hover{
+    background-color: hsl(196, 68%, 49%);
 }
 
 
@@ -784,7 +852,7 @@ form{
     display: inline-block;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); 
     margin-bottom: 0;
-    background-color: hsl(195, 100%, 86%);
+    background-color: #fff;;
     max-width: 90%;
     width: 32rem;
     height: 35.5rem;
@@ -799,9 +867,9 @@ form{
 .carousel{
     text-align: center;
     justify-items: center;
-    background: rgba(110, 190, 217, 0.5);
+    background: hsla(219, 100%, 82%, 0.505);
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: #00aee7 solid;
+    border: hsl(219, 44%, 65%) solid;
     margin: 2px  2px;
     border-radius: 6px;
     margin-bottom: 1.4rem;
@@ -814,9 +882,9 @@ form{
 .container_cards{
     text-align: center;
     justify-items: center;
-    background: rgba(110, 190, 217, 0.5);
+    background: hsla(219, 100%, 82%, 0.505);
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: #00aee7 solid;
+    border: hsl(219, 44%, 65%) solid;
     margin: 2px  2px;
     margin-bottom: 1.4rem;
     width: 65rem;
@@ -826,13 +894,52 @@ form{
     margin-right: auto; 
 }
 
-@media screen and (max-width: 767px) {
-    .card {
-        max-width: fit-content;
+@media screen and (max-width: 800px) {
+    .container_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        background: hsla(219, 100%, 82%, 0.505);
+        border: hsl(219, 44%, 65%) solid;
+        margin: 2px  2px;
+        margin-bottom: 1.4rem;
+        width: auto;
+        padding: auto;
+        border-radius: 6px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  
-    .carousel-inner {
-      max-width: fit-content; 
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        width: auto;
+        margin-bottom: 20px;
+      }
+    
+      .card {
+        margin-bottom: 0;
+        background-color: #fff;;
+        max-width: 90%;
+        width: auto;
+        margin-bottom: 20px;
+        height: auto;
+      }
+    .carousel {
+      display: none; 
+    }
+
+    .main_space-whitespaceDestination{
+        justify-items: center;
+        background: rgba(255, 255, 255, 0.7);
+        margin: 1px  1px;
+        width: auto;
+        padding: auto;
+        margin-left: auto;
+        margin-right: auto; 
     }
 }
 
