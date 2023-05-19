@@ -1,0 +1,79 @@
+/* ****************************** BASIC LAYOUT - BACKGROUND ****************************** */
+html{ 
+    background: rgb(174, 255, 255);
+    font-size: 1.125em;
+}
+
+.main-space{
+    background-color: transparent;
+    border: 8px solid rgb(86, 208, 208);
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:  hsl(193, 59%, 16%);
+    -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+    text-align: center;
+}
+
+.title3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:  hsl(193, 59%, 16%);
+    -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* ****************************** BASIC ELEMENTS ****************************** */
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    stroke-width: 2px; 
+  }
+  
+
+.main-space_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 5%;
+}
+
+.btns_main-space{ 
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+.main-space_btnsChangingColors, .main-space_btnsChangingSize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid  rgb(86, 208, 208);
+    border-radius: 8px;
+    height: auto;
+    width: 350px;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.space-btnsChangingColors, .space-btnsChangingColors{
+    justify-items: center;
+}
