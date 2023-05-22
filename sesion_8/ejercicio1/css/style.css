@@ -1,0 +1,422 @@
+/* 
+************************************** BASE WITH COMMON STYLES *****************************
+*/
+
+:root{
+    --primary-color:#ffffff;
+    --text-color:#ffffff;
+    --description-color: #ffffff;
+}
+
+a:link {
+    color: #0050d9;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fb5d5d;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.125em;
+    color: var(--primary-color);
+    background: #593030;
+}
+
+.jolly-jesters-page{
+    background-image: url("/img/carnival_wallpaper.png");
+    background-size: cover;
+}
+
+/* 
+**************************************** LAYOUT STYLES ******************************************
+*/
+
+#logo_image {
+    margin-top: 2.8rem;
+    position: absolute;
+    top: 18px;
+    margin-left: 4rem;
+    z-index: 1;
+}
+
+.title {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    -webkit-text-stroke: 1.5px hsl(0, 55%, 35%);
+    color: hsl(0, 0%, 0%);
+}
+
+.title2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: rgba(255, 38, 38, 0.5);
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    color:  hsl(0, 71%, 18%);
+    -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color:  hsl(0, 99%, 39%);
+    -webkit-text-stroke: 1px hsl(0, 100%, 23%);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.title3:hover{
+    transform: translateX(100%);
+}
+
+
+p{
+    text-align: justify;
+    transition: transform 0.3s ease;
+}
+
+p:hover{
+    transform: translatey(-100%);
+}
+
+
+/* 
+*************************************************** NAVBAR & FOOTER STYLING *****************************************
+*/
+
+/* // NAVBAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: #e3e3e3;
+}
+  
+nav a {
+    margin: 0 10px;
+}
+
+.bg-navbar-new-color {
+    background-color: #000000;
+    font-size: large;
+}
+.nav-link active{
+    color: #fff;
+}
+.navbar-nav .nav-link {
+    color: white !important; 
+}
+.nav-left, .nav-right{
+    display: inline-block;
+    align-items: center;
+}
+
+.nav-left ul li {
+    list-style: none;
+    width: 22px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
+
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-user-icon {
+    margin-left: 30px;
+}
+
+.logo {
+    width: 170px;
+    margin-right: 10px;
+}
+.online {
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* // FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background-color: #000000;
+    min-height: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.footer_copyright{
+    display: flex;
+    height: 50px; 
+}
+
+
+.footer__footer_socials a {
+    margin-left: 10px;
+
+}
+
+.footer-link active{
+    color:white;
+    
+}
+/* 
+*************************************************** CONTAINER STYLING *****************************************
+*/ 
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+} 
+
+.main_space-whitespace{
+    justify-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 1px  1px;
+    width: 43rem;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.main_space_welcomeFrame_text {
+    text-align: center;
+    justify-items: center;
+    background: hsla(0, 7%, 35%, 0.505);
+    box-shadow: 2px 6px 8px 0 rgba(26, 22, 22, 0.178);
+    border: hsl(0, 0%, 0%) solid;
+    margin: 2px  2px;
+    border-radius: 6px;
+    margin-bottom: 1.4rem;
+    width: 40rem;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.main_space_welcomeFrame_text p{
+    text-align: center;
+}
+
+/* 
+**************************************** FORM STYLES ******************************************
+*/
+
+form{
+    justify-items: center;
+    background: hsla(0, 7%, 35%, 0.505);
+    box-shadow: 2px 6px 8px 0 rgba(26, 22, 22, 0.178);
+    border: hsl(0, 0%, 0%) solid;
+    margin: 2px  2px;
+    border-radius: 6px;
+    margin-bottom: 1.4rem;
+    width: 40rem;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.input-group-text {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.input-group-text:hover {
+    color: transparent;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+input[type="text"],
+  select {
+    background-color: rgb(0, 0, 0);
+}
+
+input:hover::placeholder {
+    color: transparent;
+}
+
+input:hover{
+    background-color:transparent;
+    
+}
+
+
+select.form-select {
+    background-color: rgb(1, 1, 0);
+}
+
+select.form-select:hover{
+    background-color: white;
+}
+
+select.form-select option {
+    background-color: rgb(0, 0, 0);
+}
+
+select.form-select option:hover {
+    background-color: white;
+}
+
+div.col-12 textarea {
+    background-color: rgb(0, 0, 0);
+}
+
+div.col-12 textarea:hover {
+    background-color:transparent;
+}
+
+div.col-12:hover{
+    animation: vibrate 0.5s linear infinite;
+    content: "";
+    }
+.form-control:hover::placeholder {
+    opacity: 0;
+    transition: opacity 0s;
+  }
+
+.form-control {
+    resize: none;
+    border: 1px solid #000; 
+    transition: transform 0.3s ease;
+    flex: 1 0 50%;
+}
+
+.form-control:hover{
+    border: 1px solid transparent;
+    transition: opacity 0s;
+    transform: translateX(100%);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row:hover .form-control {
+    transform: translateX(-50%);
+}
+
+
+
+.form-select {
+    color: rgb(246, 251, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.invalid-feedback {
+    margin-top: 5px;
+    color: rgb(255, 12, 12);
+}
+
+.notificationOnSmallScreens{
+    display: none;
+    color: #cd3e00;
+}
+
+.btn{
+    width: 11.725em;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(23, 12, 12);
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+} 
+
+.btn:hover{
+    width: 11.725em;
+    font-size:small;
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+    background: transparent;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    border: 1px transparent;
+    margin-top: 15px;
+    transition: opacity 0s;
+    transform: translateX(100%);
+}
+
+.form-label:hover {
+    animation: vibrate 0.5s linear infinite;
+    content: "";
+ }
+
+@keyframes vibrate {
+
+    10% {
+      transform: translateX(-2px);
+    }
+    20% {
+      transform: translateX(2px);
+    }
+    30% {
+      transform: y(-2px);
+    }
+    40% {
+      transform: translateX(2px);
+    }
+    50% {
+      transform: translatey(-2px);
+    }
+    60% {
+      transform: translatey(7px);
+    }
+    70% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    90% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+
+/* 
+**************************************** FORM ANIMATION ******************************************
+*/

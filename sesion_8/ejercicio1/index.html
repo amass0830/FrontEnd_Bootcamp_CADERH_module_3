@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" type="image/jpg" href="./img/icon_clown.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/7dc11c21de.js" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+  <title>Jolly Jesters</title>
+</head>
+
+<body class="jolly-jesters-page">
+  <nav class="navbar navbar-expand-lg link-danger navbar-dark bg-navbar-new-color">
+    <div class="container-fluid">
+      <div class="nav-left">
+        <a href="index.html"> <img class="logo" src="/img/btn_circus.png" alt="logo_ecoSnap"></a>
+        <ul>
+          <li><i class="fa-solid fa-ghost"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-gift"></i></li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse link-warning" id="navbarSupportedContent ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="/destinations.html">Surprises</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active" aria-current="page" href="/review_sage.html"> Circus </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active" aria-current="page" href="/community.html"> Clowmmunity </a>
+          </li>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="main_space">
+    <div class="main_space-whitespace">
+      <div class="main_space_welcomeFrame_text">
+        <h6 class="title3">Step into the Circus of Smiles and let laughter reign supreme!</h6>
+        <p>
+            Welcome to JollyJesters.com, the ultimate destination for all things clown-related!
+        </p>
+        <p>Happy jokes!</p>
+      </div>
+
+      <div class="container-fluid">
+        <div class="form_submit ">
+          <h2 class="title3">Join our Clowmmunity!</h2>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label" >First name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Fireball"  required>
+              <div class="valid-feedback">
+                Well, you tried!!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Flamingo"  required>
+              <div class="valid-feedback">
+                No, westname, I see!!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                  aria-describedby="inputGroupPrepend" placeholder="@klutzDaKlown" required>
+                <div class="invalid-feedback">
+                  What about @klutzDaKlown?
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="The Macroverse" required>
+              <div class="invalid-feedback">
+                The well house?
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04"   required>
+                <option selected disabled>Choose</option>
+                <option>The Freak Show Circus</option>
+                <option>Aokigahara Forest</option>
+                <option>Island of the Dolls</option>
+                <option>Poveglia Island</option>
+                <option>Hoia Baciu Forest</option>
+              </select>
+              <div class="invalid-feedback">
+                Is it The Midnight Circus?
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Are you lost?
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea1">Why don't skeletons like clowns?</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5vh" cols="100vh"
+                aria-hidden="true" placeholder="Because they have no funny bone!" ></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="agree-check" required>
+                <label class="form-check-label" for="agree-check">
+                  I agree to the <a href="#">terms</a> and <a href="#">clownditions.</a>
+                </label>
+                <div class="invalid-feedback">
+                  To agree or not to agree, that must be thy clown-problem.
+                </div>
+                <div>
+                  <button class="btn btn-danger title3" type="submit">Join Now</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer">
+      <h5 class="copyright description">
+        &copy; All rights reserved
+      </h5>
+      <nav class="footer_nav">
+        <a class="footer-link active" aria-current="page" href="https://Instagram.com">Instagram</a>
+        <a class="footer-link active" aria-current="page" href="https://facebook.com">Facebook</a>
+        <a class="footer-link active" aria-current="page" href="https://twitter.com">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+
+</html>
